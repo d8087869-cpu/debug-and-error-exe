@@ -51,3 +51,37 @@ except ValueError:
     print('value not an int ')    
     exit()  
  '''   
+#6 
+'''
+try:
+    score = int(input("Enter score: ")) 
+
+    print("Your score is", score) 
+except ValueError:
+    print('invalid val enter int ')
+finally:
+    print('check finish ')
+'''
+#7
+''''
+name = input("Enter your name: ") 
+
+if name == "admin" :
+
+    print("Welcome admin") 
+
+else: 
+
+    print("Welcome user") 
+# was missing : , all the rest of the code was runing good    
+'''
+#8 
+price = 100 
+
+discount = 20 
+
+ 
+
+final_price = price - discount / 100 
+
+print(final_price)
