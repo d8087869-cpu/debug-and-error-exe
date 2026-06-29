@@ -143,3 +143,99 @@ except ValueError:
 finally:
         print(" calculater closed ")    
 '''
+#part 2 
+#1 
+'''
+try:
+    celsius = input("Celsius: ") 
+
+    fahrenheit = int(celsius) * 9 / 5 + 32 
+
+    print(fahrenheit) 
+except ValueError:
+    print(" Temperature must be a number. ")    
+
+#2 
+try:
+    word = input("Enter word: ") 
+
+    print(word[0]) 
+except   IndexError:
+    print('enter rigth index') 
+'''
+#3
+'''
+scores = [90, 80, 100] 
+
+total = 0 
+
+for score in scores: 
+#total=score
+    total += score 
+
+ 
+average = total / len(scores) 
+
+print(average)
+#33.333336 , correct 90 , bug type loogi 
+
+#4
+
+products = { 
+    "pen": 4, 
+    "notebook": 12} 
+try:
+    print()
+    product = input("Product: ")
+
+
+
+    amount = int(input("Amount: ")) 
+    print(products[product] * amount)
+except ValueError:    
+    print('enter int number')
+    exit()
+except KeyError:
+    print('not in the key options ')    
+    exit()
+'''
+#5 
+'''
+files = ["data.txt", "users.csv", "notes.txt"] 
+try:
+
+ 
+
+    choice = int(input("Choose file number: ")) 
+
+    print(files[choice]) 
+except ValueError:
+    print('only giving val ')
+except IndexError:
+    print('put a valid index')   
+'''
+
+#6 
+numbers = [4, 10, 2, 8] 
+
+maximum = 0 
+
+for number in numbers: 
+#number < maximum:
+    if number > maximum:
+
+        maximum = number 
+print(maximum) 
+# worng 0 
+#10
+
+#7 
+
+user = { 
+    "name": "Dana", 
+    "age": 25 }
+try: 
+    field = input("Choose field: ") 
+    print(user[field].upper()) 
+except KeyError:
+    print('in valid key option ')    
