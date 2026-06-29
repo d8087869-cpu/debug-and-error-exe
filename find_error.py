@@ -76,12 +76,70 @@ else:
 # was missing : , all the rest of the code was runing good    
 '''
 #8 
+'''
 price = 100 
 
 discount = 20 
 
- 
+print(         )
 
-final_price = price - discount / 100 
+#final_price = price - discount / 100 
+final_price = price - price /100* discount 
 
 print(final_price)
+
+#99.8 , expected =80 , 
+
+#9
+password = "abc123" 
+
+guess = input("Enter password: ") 
+
+ 
+
+if guess == password: 
+
+    print("Login successful") 
+
+else: 
+
+    print("Wrong password") 
+#Enter password: 1
+#Login successful   
+# != / correct ==  
+#10
+try:
+    num1 = int(input("Number 1: ")) 
+
+    op = input("Operator: ") 
+
+    num2 = int(input("Number 2: ")) 
+    
+    print ('there is no such val')  
+         
+    if op == "+": 
+
+        print(num1 + num2) 
+
+    elif op == "-": 
+
+        print(num1 - num2) 
+
+    elif op == "*": 
+
+        print(num1 * num2) 
+
+    elif op == "/": 
+        
+            print(num1 / num2)
+            
+            print('cant divide by 0 ')    
+    else:
+        print('invalid opritor')
+except ZeroDivisionError:
+     print('cant divide by 0 ')
+except ValueError:     
+     print('except ValueError : ')    
+finally:
+        print(" calculater closed ")    
+'''
