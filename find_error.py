@@ -1,4 +1,5 @@
-#1 
+#1
+''' 
 age = input("Enter your age: ") 
 try:
     next_year = int(age) + 1 
@@ -23,4 +24,30 @@ try:
 except IndexError:
     print('index not found ')   
 except ValueError:
-    print('enter only int numbers ')    
+    print('enter only int numbers ')   
+'''    
+#4 
+'''
+prices = { 
+    "apple": 3, 
+    "banana": 5 } 
+item = input("Enter item: ") 
+try:
+    print(prices[item])
+except KeyError:
+    print('item not found ')    
+#5
+numbers = [100, 200, 300] 
+try:
+    index = int(input("Choose index: ")) 
+    divider = int(input("Choose divider: ")) 
+    result = numbers[index] / divider 
+    print(result)
+except ZeroDivisionError: 
+    print('dont divide by 0 ')
+except IndexError:
+    print('index not in range ') 
+except ValueError:
+    print('value not an int ')    
+    exit()  
+ '''   
