@@ -216,6 +216,7 @@ except IndexError:
 '''
 
 #6 
+'''
 numbers = [4, 10, 2, 8] 
 
 maximum = 0 
@@ -239,3 +240,67 @@ try:
     print(user[field].upper()) 
 except KeyError:
     print('in valid key option ')    
+'''
+#8    
+'''
+try:
+    price = int(input("Price: ")) 
+    amount = int(input("Amount: ")) 
+except ValueError:
+    print('please enter int value ')
+total = price * amount 
+if amount > 3: 
+#amount <3
+    total = total - total / 100 * 10
+    print(total) 
+
+'''
+
+#9 
+try:
+    grade = int(input("Grade: ")) 
+except ValueError:
+    print(" enter a int value")
+    exit()
+if grade >= 90: 
+
+    print("Excellent") 
+
+elif grade >= 70: 
+
+    print("Good") 
+
+elif grade >= 55: 
+
+    print("Pass") 
+
+else: 
+
+    print("Fail") 
+#out put was rigth beqouse the condition start agin evry time 
+
+#10 
+try:
+    balance = 100 
+
+    action = input("Action: ") 
+
+    amount = int(input("Amount: ")) 
+
+    if action == "deposit": 
+
+        balance = balance + amount 
+
+    elif action == "withdraw": 
+        if balance < amount :
+            print('not enough money')
+        else:
+            balance = balance - amount 
+    else:
+        print('unknown action')
+
+    print("Balance:", balance) 
+except ValueError:
+    print('enter int value ')
+finally:
+    print('bank action finished ')    
